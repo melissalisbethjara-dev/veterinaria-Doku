@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VETERINARIA DOKU Y SUS AMIGOS</title>
+</head>
+
+<body>
+    <header><img src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
+    <nav>
+        <a href="index.html">INICIO</a> |
+        <a href="sobre nosotros.html">NOSOTROS</a> |
+        <a href="servicio.html">SERVICIOS</a> |
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <main>
+        <address>
+            <div style="display: flex;">
+                <div><img src="imagenes/mapa.jpg" alt="mapa" width="90%"></div>
+                <div style="width:50%;">
+                    <img src="imagenes/icono goole.jpg" alt="ubicacion" width="50px">
+                    <p>Av. Guardia Peruana 222 Chorrillos.</p>
+                    <img src="imagenes/telefono.jpg" alt="telefono" width="50px">
+                    <p>Teléfono: 90666122</p>
+                    <img src="imagenes/whatsapp.jpg" alt="whatsapp" width="50px">
+                    <p>WhatsApp: 952821422</p>
+                    <img src="imagenes/reloj.jpg" alt="horario" width="50">
+                    <p>Horario de atención:9:am a 8 pm</p>
+                </div>
+            </div>
+        </address>
+        <div>
+            <label for="nombre">NOMBRE Y APELLIDO</label><br>
+            <input type="text" id="nombre" name="nombre_apellido" required>
+        </div>
+        <div>
+            <label for="email">CORREO ELECTRONICO</label><br>
+            <input type="email" id="email" name="correo_electronico" required>
+        </div>
+        <div>
+            <label for="telefono">TELEFONO</label><br>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div>
+            <label for="servicio">SERVICIO DE INTERES</label><br>
+            <input type="text" id="servicio" name="servicio_interes">
+        </div>
+        <div>
+            <label for="dudas">DETALLE DE DUDAS</label><br>
+        </div>
+        <div>
+            <button type="submit">ENVIAR MENSAJE</button>
+            <textarea id="enviar mensaje" maxlength="20" placeholder="escribe aqui"> </textarea>
+        </div>
+    </main>
+    <footer>
+        <p>
+            POLÍTICA DE PRIVACIDAD | TÉRMINOS Y CONDICIONES | MEDIOS DE PAGO | LIBRO DE RECLAMACIONES
+        </p>
+    </footer>
+</body>
+</html>
