@@ -5,68 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VETERINARIA DOKU Y SUS AMIGOS</title>
+    <link rel="stylesheet" href="stlyes.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!--fin-->
+    <!-- boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--fin-->
 </head>
 
 <body>
-    <header><img src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
+    <header><img class="logo"src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
     <nav>
-        <a href="index.html">INICIO</a> |
-        <a href="sobre nosotros.html">NOSOTROS</a> |
-        <a href="servicio.html">SERVICIOS</a> |
-        <a href="contacto.html">CONTACTO</a>
+        <a class="barra" href="index.html">INICIO</a> |
+        <a class="barra" href="sobre nosotros.html">NOSOTROS</a> |
+        <a class="barra" href="servicio.html">SERVICIOS</a> |
+        <a class="barra" href="contacto.html">CONTACTO</a>
     </nav>
     <main>
-        <div style="display: flex;">
-            <div
-                style="display:flex;flex-direction: column;width: 100%;justify-content: center;align-items: center;height: 100%;">
-                <div style="display: flex;width: 100%;justify-content: space-around;">
-                    <div>
-                        <img src="imagenes/spa.jpg" alt="baño perrito" height="100px">
-                        <h4>SPA Y PELUQUERIA </h4>
-                    </div>
-                    <div>
-                        <img src="imagenes/consulta medica .jpg" alt="medico para perrito" height="100px">
-                        <h4>CONSULTAS MEDICAS </h4>
-                    </div>
-                    <div style="display: flex;">
-                        <div>
-                            <img src="imagenes/vacunación.jpg" alt="vacuna perrito" height="100px">
-                            <h4>VACUNACIÓN </h4>
+        <div class="contenido-servicios">
+            <div class="servicios ">
+                <div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="imagenes/desprasitacion.jpg" alt="desprasitacion" height="100px">
-                            <h4>DESPARASITACIÓN</h4>
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex;width: 100%;justify-content: space-around;">
-                    <div>
-                        <img src="imagenes/laboratorio.jpg" alt="laboratorio" height="100px">
-                        <h4>LABORATORIO</h4>
-                    </div>
-                    <div>
-                        <img src="imagenes/radiox.jpg" alt="rayosx" height="100px">
-                        <h4>RAYOS X </h4>
-                    </div>
-                    <div>
-                        <img src="imagenes/cirugia.jpg" alt="cirugia" height="100px">
-                        <h4>CIRUGIA </h4>
-                    </div>
-                    <div>
-                        <img src="imagenes/diente.jpg" alt="dientes" height="100px">
-                        <h4>PROFILAXIS DENTAL</h4>
-                    </div>
-                </div>
+                        <div class="carousel-inner">
 
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://media.istockphoto.com/id/1277453154/es/foto/golden-retriever-perro-en-un-salón-de-aseo-está-tomando-una-ducha.jpg?s=2048x2048&w=is&k=20&c=4cX8f0fAxW6JQwW83EqMZEs3nOKxAK4fLS6Kl6r9pQ0="
+                                    class="d-block w-100" alt="baño perrito">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>SPA Y PELUQUERÍA</h5>
+                                    <p>SERVICIOS</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://media.gettyimages.com/id/1181451483/es/foto/veterinario-que-le-da-a-un-perro-una-vacuna-vacuna.jpg?s=1024x1024&w=gi&k=20&c=HzmWpBA0lCyDGeuMNOAdOlqs94_PQ9xJVgRwxovz-pU="
+                                    class="d-block w-100" alt="vacunación">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>VACUNACIÓN</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/id/1428381824/es/foto/veterinario-de-perros-con-estetoscopio.jpg?s=2048x2048&w=gi&k=20&c=aGqJr-O3-GyIADLE9hFSajdmNv_HbGqGTWewuGy5pME="
+                                    class="d-block w-100" alt="consulta">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>CONSULTA</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagenes/desprasitacion.jpg" class="d-block w-100" alt="desparasitación">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>DESPARASITACIÓN</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagenes/laboratorio.jpg" class="d-block w-100" alt="laboratorio">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>LABORATORIO</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/id/1160835692/es/foto/dos-veterinarios-experimentados-examinando-una-imagen-de-rayos-x.jpg?s=2048x2048&w=gi&k=20&c=uDrnGbu7S7VYSYleIgEELHpWew4cqxAIRvnqyvXliyc="
+                                    class="d-block w-100" alt="rayos x">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>RAYOS X</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://media.gettyimages.com/id/485428148/es/foto/vet-tiende-a-la-rotura-de-extremidad-de-labrador-amarillo.jpg?s=2048x2048&w=gi&k=20&c=FQegWQ5eVTy55CLPR6jlPX-6rnYMNlH0uXqFJaX2DDo="
+                                    class="d-block w-100" alt="cirugía">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>CIRUGÍA</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagenes/diente.jpg" class="d-block w-100" alt="dientes">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>PROFILAXIS DENTAL</h5>
+                                    <p>SERVICIOS.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <p>
-           POLÍTICA DE PRIVACIDAD |TÉRMINOS Y CONDICIONES | MEDIOS DE PAGO | LIBRO DE RECLAMACIONES
+            POLÍTICA DE PRIVACIDAD |TÉRMINOS Y CONDICIONES | MEDIOS DE PAGO | LIBRO DE RECLAMACIONES
         </p>
     </footer>
 </body>
+
 </html>

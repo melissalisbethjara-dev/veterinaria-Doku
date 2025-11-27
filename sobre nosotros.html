@@ -5,24 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sobre nosotros</title>
+  <link rel="stylesheet" href="stlyes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header><img src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
+  <header><img class="logo" src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
   <nav>
-    <a href="index.html">INICIO</a> |
-    <a href="sobre nosotros.html">NOSOTROS</a> |
-    <a href="servicio.html">SERVICIOS</a> |
-    <a href="contacto.html">CONTACTO</a>
+    <a class="barra"href="index.html">INICIO</a> |
+    <a class="barra"href="sobre nosotros.html">NOSOTROS</a> |
+    <a class="barra"href="servicio.html">SERVICIOS</a> |
+    <a class="barra"href="contacto.html">CONTACTO</a>
   </nav>
   <main>
     <section>
-      <div style="display: flex;justify-content: space-evenly">
-        <div><img src="imagenes/vet6.jpg" alt="veterinario" width="100%"></div>
-        <div style="width:50%;">
+      <div  class="sobre_nosotros">
+        <div class="info_columna">
+          <img src="imagenes/vet6.jpg" alt="veterinario" width="50%">
+        </div>
+        <div class="info_columna" >
           <article>
             <h2>Sobre Nosotros</h2>
-            <p>
+            <p class="argumento_texto">
               Fundada en 2019, nuestra clínica veterinaria nació con la misión de ofrecer
               los mejores servicios de atención veterinaria para mantener a tu mascota más sana
               y libre de enfermedades. Nuestra clínica nació haciendo siempre hincapié en la
@@ -34,19 +41,19 @@
       </div>
     </section>
 
-    <div style="display: flex;justify-content: space-evenly">
+    <div class="sobre_nosotros">
       <section>
         <div>
           <div style="width:350px;">
             <h2>Nuestro Personal</h2>
-            <p>
+            <p class="argumento_texto">
               Contamos con un equipo de médicos veterinarios y asistentes capacitados,
               comprometidos con la salud y el bienestar de tu mascota. Nos caracterizamos
               por brindar atención profesional, trato cariñoso y la experiencia necesaria
               para ofrecer diagnósticos, tratamientos y cuidados de calidad.
             </p>
           </div>
-          <div style="width: 400px;height: 400px;background-image:url('imagenes/equipo.jpg');border-radius: 120px;">
+          <div id="imagen_equipo">
           </div>
         </div>
       </section>
@@ -54,7 +61,7 @@
         <div>
           <div>
             <h2>Instalaciones</h2>
-            <p>
+            <p class="argumento_texto">
               Contamos con equipos modernos para brindar a tu mascota una atención segura
               y de calidad:
             </p>

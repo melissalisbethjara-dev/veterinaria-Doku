@@ -1,0 +1,203 @@
+nav {
+    background-color: skyblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* valor correcto */
+    font-style: normal;
+}
+
+.barra:hover {
+    background-color: rgb(175, 224, 243);
+}
+
+.info_columna {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.argumento_texto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 22px;
+}
+
+.titulo_promociones {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #131313;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_promo {
+    display: flex;
+    flex-direction:
+        column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo:hover {
+    scale: 1.05;
+    border-radius: 10px;
+}
+.promo{
+    transition: all 200ms;
+}
+
+.logo{
+animation-name: mianimacion;
+animation-duration: 15s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion{
+    50%{
+        transform: translate(90vw);
+    }
+    100%{
+         transform: translate(0vw);
+    }
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.contenido_flex {
+    display: flex;
+}
+
+
+.imagen-info-columna {
+    width: 400px;
+    min-width: 300px;
+}
+
+.contenedor_visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sobre_nosotros {
+    display: flex;
+    justify-content: space-evenly
+}
+
+#imagen_equipo {
+    width: 400px;
+    height: 400px;
+    background-image: url('imagenes/equipo.jpg');
+    border-radius: 120px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenedor_servicios {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contenido-servicios {
+    display: flex;
+
+}
+
+.contacto {
+    display: flex;
+    padding: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100vw !important;
+    object-fit: cover;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 234, 234);
+    font-size: 50px
+}
+
+footer {
+    background-color: skyblue;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 15px 5px;
+    margin-top: 10px;
+}
+
+#formulario{
+     max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px;        
+}
+
+
+@media (max-width: 640px) {
+    .contenido_flex {
+        flex-direction: column;
+    }
+
+    .info_columna {
+        width: 100%;
+    }
+
+    .contenedor_promo {
+        width: 100%;
+    }
+    .sobre_nosotros {
+        flex-direction: column;
+    }
+}

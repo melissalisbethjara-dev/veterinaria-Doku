@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VETERINARIA DOKU Y SUS AMIGOS</title>
+    <link rel="stylesheet" href="stlyes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header> <img src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
+    <header> <img class="logo"src="imagenes/logo.jpg" alt="Logo de la empresa" width="150"></header>
     <nav>
-        <a href="index.html">INICIO</a> |
-        <a href="sobre nosotros.html">NOSOTROS</a> |
-        <a href="servicio.html">SERVICIOS</a> |
-        <a href="contacto.html">CONTACTO</a>
+        <a class="barra" href="index.html">INICIO</a> |
+        <a class="barra" href="sobre nosotros.html">NOSOTROS</a> |
+        <a class="barra" href="servicio.html">SERVICIOS</a> |
+        <a class="barra" href="contacto.html">CONTACTO</a>
     </nav>
     <main>
-        <section style="display: flex;">
-            <div>
+        <section class="contenido_flex">
+            <div class="info_columna">
                 <article>
-                    <p>
+                    <p class="argumento_texto">
                         Somos un centro dedicado al cuidado integral de las mascotas, ofreciendo servicios de consulta,
-                        vacunación,
-                        cirugías, hospitalización, diagnóstico y estética.
+                        vacunación,cirugías, hospitalización, diagnóstico y estética.
                         Nuestro compromiso es brindar salud, bienestar y calidad de vida a cada animal, con un equipo
-                        profesional,
-                        instalaciones modernas y un trato lleno de cariño.
+                        profesional,instalaciones modernas y un trato lleno de cariño.
                     </p>
                 </article>
             </div>
-            <div><img src="imagenes/vet1.jpg" alt="veterinario" width="150%"></div>
-            <div style="width: 150%;"></div>
+            <div class="info_columna">
+                <img src="imagenes/vet1.jpg" alt="veterinario"  class="imagen-info-columna">
+            </div>
+
         </section>
         <section>
-            <div style="width: 100%; display: flex; justify-content: center;">
-                <h1>PROMOCIONES DESTACADAS</h1>
+            <div>
+
+                <h1 class="titulo_promociones ">PROMOCIONES DESTACADAS</h1>
             </div>
-            <div style="display: flex;">
-                <div
-                    style="display:flex;flex-direction: column;width: 50%;justify-content: center;align-items: center;">
+            <div class="contenido_flex">
+                <article class="contenedor_promo">
                     <h2>BAÑO PREMIUN 50%</h2>
-                    <div style="display: flex;">
-                        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                            <img src="imagenes/spa.jpg" alt="baño perrito" height="280px">
+                    <div class="contenido_flex">
+                        <div class="contenedor_visual">
+                            <img class="promo" src="imagenes/spa.jpg" alt="baño perrito" height="280px">
                         </div>
                         <div>
                             <ol>
@@ -53,13 +60,12 @@
                             </ol>
                         </div>
                     </div>
-                </div>
-                <div
-                    style="display:flex;flex-direction: column;width: 50%;justify-content: center;align-items: center;">
+                </article>
+                <article class="contenedor_promo">
                     <h2>COMBO ANUAL S/120.00</h2>
-                    <div style="display: flex;">
-                        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                            <img src="imagenes/vet4.jpg" alt="consulta" height="280px">
+                    <div class="contenido_flex">
+                        <div class="contenerdor_visual">
+                            <img class="promo" src="imagenes/vet4.jpg" alt="consulta" height="280px">
                         </div>
                         <div>
                             <ol>
@@ -72,7 +78,7 @@
                             </ol>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -82,4 +88,5 @@
         </p>
     </footer>
 </body>
+
 </html>
