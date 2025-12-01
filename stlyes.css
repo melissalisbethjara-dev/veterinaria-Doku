@@ -13,7 +13,6 @@ nav {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    /* valor correcto */
     font-style: normal;
 }
 
@@ -28,6 +27,12 @@ nav {
     padding: 40px 20px;
 }
 
+.info_columna img {
+    width: 100%;
+    height: auto;
+    /* ajustar al movil */
+}
+
 .argumento_texto {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -36,7 +41,7 @@ nav {
 
 .titulo_promociones {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #131313;
     margin-bottom: 40px;
@@ -59,23 +64,114 @@ nav {
     scale: 1.05;
     border-radius: 10px;
 }
-.promo{
+
+.promo {
     transition: all 200ms;
+    height: 280px
 }
 
-.logo{
-animation-name: mianimacion;
-animation-duration: 15s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+#imagen_index {
+    opacity: 0;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    /* Mantiene la imagen visible al terminar */
 }
 
-@keyframes mianimacion{
-    50%{
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#imagen_vet {
+    animation-name: girozoom;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards
+}
+
+@keyframes girozoom {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
+#imagen_equipo {
+    animation-name: balance;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: infinite;
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#imagen_instalaciones {
+    animation-name: mover_abajo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover_abajo {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
+
+.logo {
+    animation-name: mianimacion;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    50% {
         transform: translate(90vw);
     }
-    100%{
-         transform: translate(0vw);
+
+    100% {
+        transform: translate(0vw);
     }
 }
 
@@ -87,6 +183,8 @@ li {
 
 .contenido_flex {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -149,20 +247,19 @@ iframe {
 }
 
 .carousel-item img {
-    height: 100%;
-    width: 100vw !important;
-    object-fit: cover;
+    width: 100vw !important; 
 }
+
 
 h5 {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(238, 234, 234);
-    font-size: 50px
+    color: rgb(22, 21, 21);
+    font-size: 50px !important
 }
 
 footer {
     background-color: skyblue;
-    height: 40px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,22 +269,23 @@ footer {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    padding: 15px 5px;
+    padding: 0 20px;
     margin-top: 10px;
 }
 
-#formulario{
-     max-width: 500px; 
-    margin: 0 auto; 
+#formulario {
+    max-width: 500px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9; 
-    border-radius: 10px;        
+    background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
 
 @media (max-width: 640px) {
     .contenido_flex {
         flex-direction: column;
+        text-align: center;
     }
 
     .info_columna {
@@ -197,7 +295,14 @@ footer {
     .contenedor_promo {
         width: 100%;
     }
+
     .sobre_nosotros {
         flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+        object-fit: cover;
     }
 }
